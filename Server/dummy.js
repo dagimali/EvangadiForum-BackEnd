@@ -126,3 +126,26 @@ database = evangadiforum;
 user = EvangadiForum;
 password = rv80bBcTfUrTEI3;
 JWT_SECRET = rv80bBcTfUrTEI3;
+
+gitignor
+// # dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+// # testing
+/coverage
+
+// # production
+/build
+
+// # misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log
+yarn-debug.log
+yarn-error.log
