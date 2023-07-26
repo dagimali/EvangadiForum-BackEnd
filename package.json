@@ -7,7 +7,7 @@
   "license": "ISC",
   "scripts": {
     "start": "nodemon server.js",
-    "dev": "concurrently \"npm run dev --prefix client\" \"npm start\""
+    "dev": "concurrently \"npm run dev --prefix ../EvangadiForum-FrontEnd\" \"npm start\""
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
