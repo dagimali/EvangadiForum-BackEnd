@@ -140,3 +140,7 @@ node_modules.pnp.pnp.js /
 npm - debug.log;
 yarn - debug.log;
 yarn - error.log;
+
+//  # planetScale database name: main - 2023 - 07 - 29 - e1qkpq;
+userName: twqvvy5s2lqjt6vd2dim;
+password: pscale_pw_ygHvgEo9kHjdjqHRRW4hGk2rK1Obq6xOKB2MiJbUlMy;
