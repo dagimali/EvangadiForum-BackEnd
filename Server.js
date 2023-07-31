@@ -11,7 +11,11 @@ const userRouter = require("./Server/API/Users/user.router");
 const app = express();
 
 // Enable Cross-Origin Resource Sharing (CORS)
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://16bf9250.evangadiforum-frontend-4re.pages.dev",
+  })
+);
 
 // Parse incoming requests with JSON payloads
 app.use(express.json());
