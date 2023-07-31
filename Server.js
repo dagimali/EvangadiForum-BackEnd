@@ -6,9 +6,8 @@ const express = require("express");
 const cors = require("cors");
 // const mysql = require("mysql2");
 const app = express();
-const port = process.env.port || 8080;
-const userRouter = require("./Server/API/Users/user.router");
 app.use(cors());
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use((req, res, next) => {
@@ -21,8 +20,9 @@ app.use((req, res, next) => {
   next();
 });
 
+const userRouter = require("./Server/API/Users/user.router");
 app.use("/api/users", userRouter);
-
+const port = process.env.port || 8080;
 app.listen(port, "0.0.0.0", (err) => {
   if (err) {
     console.log(err);
