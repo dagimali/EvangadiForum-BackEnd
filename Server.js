@@ -6,7 +6,7 @@ const express = require("express");
 const cors = require("cors");
 // const mysql = require("mysql2");
 const app = express();
-const port = process.env.port || 80;
+const port = process.env.port || 8080;
 const userRouter = require("./Server/API/Users/user.router");
 
 app.use(cors());
