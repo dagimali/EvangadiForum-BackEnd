@@ -6,7 +6,7 @@
   "author": "dagim",
   "license": "ISC",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "dev": "concurrently \"npm run dev --prefix ../EvangadiForum-FrontEnd\" \"npm start\""
   },
   "dependencies": {
