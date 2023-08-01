@@ -8,7 +8,7 @@ const userRouter = require("./Server/API/Users/user.router");
 
 const app = express();
 
-app.use(cors());
+app.use(cors({ origin: "*" }));
 
 app.use(express.json());
 
