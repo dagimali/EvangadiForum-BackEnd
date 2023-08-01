@@ -156,7 +156,7 @@ module.exports = {
     // console.log(req.user);
     // First, retrieve the user details from authenticateToken
     userById(req.user, (error, user) => {
-      // console.log(user);
+      console.log(user);
       if (error) {
         console.log("Failed to get user details from the database.");
         return res.status(500).json({ msg: "Failed to add the question." });
@@ -173,6 +173,7 @@ module.exports = {
         userId: user.user_id, //  retrieved user_id from the user details.
         userName: user.user_name,
       };
+      console.log(questionData);
       let date = new Date().toISOString();
       let isoDate = new Date(date);
       const currentDate =
