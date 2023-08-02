@@ -6,7 +6,7 @@ const express = require("express");
 const cors = require("cors");
 const userRouter = require("./Server/API/Users/user.router");
 const app = express();
-app.use(cors());
+app.use(cors({credentials:true}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
