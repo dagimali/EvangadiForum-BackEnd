@@ -153,7 +153,7 @@ module.exports = {
   },
 
   insertQuestion: (req, res) => {
-    console.log(req);
+    console.log(req.user);
     // First, retrieve the user details from authenticateToken
     userById(req.user, (error, user) => {
       console.log(user);
