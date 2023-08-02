@@ -6,7 +6,9 @@ const express = require("express");
 const cors = require("cors");
 const userRouter = require("./Server/API/Users/user.router");
 const app = express();
-app.use(cors({credentials:true}));
+app.use(
+  cors({ origin: "https://06541ee4.evangadiforum-frontend-4re.pages.dev" })
+);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
