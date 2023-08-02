@@ -33,6 +33,7 @@ module.exports = {
       if (err) return res.sendStatus(403);
       console.log(user);
       req.user = user.id;
+      console.log(req.user);
       next();
     });
   },
