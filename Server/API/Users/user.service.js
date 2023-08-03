@@ -28,7 +28,7 @@ module.exports = {
   },
   userById: (id, callback) => {
     pool.query(
-      `SELECT Registration.user_id,user_name,user_email,first_name,last_name FROM Registration LEFT JOIN profile ON Registration.user_id=Profile.user_id WHERE Registration.user_id= ?`,
+      `SELECT Registration.user_id,user_name,user_email,first_name,last_name FROM Registration LEFT JOIN Profile ON Registration.user_id=Profile.user_id WHERE Registration.user_id= ?`,
       [id],
       (err, result) => {
         if (err) {
