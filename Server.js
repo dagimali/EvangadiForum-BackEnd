@@ -26,7 +26,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use((req, res, next) => {
   res.setHeader(
     "Access-Control-Allow-Origin",
-    "https://06541ee4.evangadiforum-frontend-4re.pages.dev"
+    "https://769088b8.evangadiforum-frontend-4re.pages.dev"
   );
   res.setHeader("Access-Control-Allow-Methods", "POST, GET, PUT");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
