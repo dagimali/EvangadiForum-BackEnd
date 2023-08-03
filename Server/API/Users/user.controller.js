@@ -233,10 +233,10 @@ module.exports = {
     // console.log(req);
     userById(req.user, (error, user) => {
       // console.log(req.user);
-      console.log(user);
+      // console.log(user);
       if (error) {
         console.log("Failed to get user details from the database.");
-        return res.status(500).json({ msg: "Failed to add the question." });
+        return res.status(500).json({ msg: "Failed to add the user." });
       }
 
       if (!user) {
@@ -252,13 +252,13 @@ module.exports = {
         if (!question || question.length === 0) {
           return res.status(404).json({ msg: "Question not found." });
         }
-        console.log(user.user_id);
+        // console.log(user.user_id);
         const answerData = {
           answer: answer,
           userId: user.user_id,
           userName: user.user_name,
         };
-        console.log(answerData);
+        // console.log(answerData);
         let date = new Date().toISOString();
         let isoDate = new Date(date);
         const currentDate =

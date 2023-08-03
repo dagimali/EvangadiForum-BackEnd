@@ -27,10 +27,16 @@ module.exports = {
   authenticateToken(req, res, next) {
     // console.log(res);
     const token = req.header("x-auth-token");
-    if (!token) return res.sendStatus(401);
+    if (!token)
+      return res
+        .sendStatus(401)
+        .json({ msg: "No authentication token, authorization denied" });
     console.log(token);
     jwt.verify(token, process.env.JWT_SECRET, (err, user) => {
-      if (err) return res.sendStatus(403);
+      if (err)
+        return res
+          .sendStatus(401)
+          .json({ msg: "Token verification failed, authorization denied" });
       console.log(user);
       req.user = user.id;
       console.log(req.user);
