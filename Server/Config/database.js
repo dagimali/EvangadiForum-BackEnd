@@ -31,7 +31,7 @@ console.log("connected to planetscale");
 
 //   //   conn.query(/* ... */);
 //   // Don't forget to release the connection when finished!
-//   // pool.releaseConnection(connection);
+// pool.releaseConnection(connection);
 // });
 // pool.end();
 // pool.connect(function (error, connection) {
