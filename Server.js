@@ -9,7 +9,7 @@ const userRouter = require("./Server/API/Users/user.router");
 const app = express();
 
 app.use(
-  cors({ origin: "https://993bfccf.evangadiforum-frontend-4re.pages.dev/" })
+  cors({ origin: "https://993bfccf.evangadiforum-frontend-4re.pages.dev" })
 );
 //
 app.use(express.json());
@@ -28,7 +28,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use((req, res, next) => {
   res.setHeader(
     "Access-Control-Allow-Origin",
-    "https://993bfccf.evangadiforum-frontend-4re.pages.dev/"
+    "https://993bfccf.evangadiforum-frontend-4re.pages.dev"
   );
   res.setHeader("Access-Control-Allow-Methods", "POST, GET, PUT, PATCH");
   res.setHeader(
